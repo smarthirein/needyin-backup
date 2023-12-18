@@ -1,0 +1,759 @@
+<?php  require_once 'class.user.php'; ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="NeedyIn is a free online platform for job seekers who are immediate joiners and employers to meet their job requirements.">
+    <title>Job Portal and Recruitment | Job Posting Site - Needyin</title>
+	 
+           <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Pinyon+Script" rel="stylesheet">
+    <link rel="stylesheet" href="css1/styles-merged1.css">
+    <link rel="stylesheet" href="css1/style.min1.css">
+	   <link rel="stylesheet" href="css/style.css">
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <?php //include "source.php" ?>
+
+        <script>
+            $(document).ready(function () {
+               
+                $('.searchskills, .sel-city').focusin(function () {
+                    $('.pagebanner-in').addClass('darkbg');
+                })
+              
+                $('.searchskills, .sel-city').focusout(function () {
+                    $('.pagebanner-in').removeClass('darkbg');
+                });
+            });
+        </script>
+		<script type="text/javascript">
+    modernAlert();
+    function modernAlertCallback(input) {
+        if (typeof input === 'boolean') {
+            if (input === true) {
+                alert('You clicked ok!');
+            } else {
+                alert('You clicked cancel!');
+            }
+        } else {
+            alert('Your name is ' + input + '!');
+        }
+    }
+	
+</script> 
+<link href="2/ninja-slider.css" rel="stylesheet" type="text/css" />
+    <script src="2/ninja-slider.js" type="text/javascript"></script>
+   
+</head>
+	<style>
+		 .bslider{
+		background:#fff ;
+		opacity:0.6 ;
+		color:#000;
+	}
+	#welcome{
+	
+	}
+	</style>
+<body >
+
+<?php 
+	include_once("analyticstracking.php");
+ $query="select jdndstatus from tbl_jobseeker where JUser_Id=".$_SESSION['userSession'];
+                                  $query_res=mysqli_query($con,$query);
+                                  $dnd=mysqli_fetch_array($query_res);
+                                $dnd_status=$dnd['jdndstatus'];
+?>
+       <?php 
+     if($dnd_status=='2')
+        {
+            include "postlogin-header-inactive.php"; 
+        }
+        else 
+        {
+              if(isset($_SESSION['userSession']))
+                    {
+                         include "postlogin-header-jobseekar.php"; 
+                    } 
+                 
+            	else if(isset($_SESSION['empSession']))
+                    {
+                         include "includes-recruiter/db-recruiter-header.php"; 
+                    } 
+                    
+            		else
+            	{
+                include "prelogin-header.php"; 
+              } 
+       }
+	?>
+        <!-- main-->
+        <main>
+       
+            <section >
+                <!-- here am removing class to this div for transparent image at home as if you want search add below div  class-->
+                <!--<div class="pagebanner-in">-->
+				<div class="">
+                    <div class="bannerin" style="padding-bottom:0px !important;padding-top:0px !important;">
+                        <div class="container">
+                            <!-- search -->
+							<?php 
+									if(isset($_SESSION['empSession']) || !isset($_SESSION['userSession']))
+        {
+									
+		}
+else{
+			
+		?>
+                            <div class="row search-home nomrg">
+                                <div class="search-home-in newsearch">
+                                    <div class="row">									
+										<?php require_once "search.php"; ?>
+                                    </div>
+                                </div>
+                            </div>
+						<?php } ?>
+                            
+                            <!--<div class="row">
+                                <div class="col-md-12  text-center">
+                                  
+                                    <article>
+                                        <h1 class="h1 txt-white">Exciting Career Opportunities </h1>
+                                        <p class="txt-white flight">Get registered with Needyin and reunite with your immediate family at your preferred location. </p>
+               					     </article>
+                                    
+                                </div>
+                            </div>-->
+                        </div>
+                    </div>
+                </div>
+            
+          
+            
+        <!--   <section class="ads-block">
+                <div class="container">
+                  <div class="row">
+                  <div class="col-md-8 col-md-offset-2">
+                       <ul id="slides" class="slide01">
+					     <li class="slide showing"><a href="signup-jobseekar.php"><img src="img/ads-img/ad-home01.jpg"></a></li>
+                           <li class="slide"><a href="signup-jobseekar.php"><img src="img/ads-img/ad-home02.jpg"></a></li>
+						    <li class="slide"><a href="signup-jobseekar.php"><img src="img/ads-img/ad-home03.jpg"></a></li>
+						 
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+                <script>
+                   var slides = document.querySelectorAll('#slides .slide');
+                        var currentSlide = 0;
+                        var slideInterval = setInterval(nextSlide,5000);
+
+                        function nextSlide(){
+                            slides[currentSlide].className = 'slide';
+                            currentSlide = (currentSlide+1)%slides.length;
+                            slides[currentSlide].className = 'slide showing';
+                        }
+                </script>
+            </section>-->
+		
+			
+			</section>
+           
+            <section class="flexslider"  id="welcome">
+			<div id="ninja-slider">
+				<div class="slider-inner">
+					<ul style="padding-top:30% !important;">
+						<li>
+							<a class="ns-img" href="img/1.jpg"></a>
+							<!--<div class="caption">RESPONSIVE</div>-->
+						</li>
+						<li>
+							<a class="ns-img" href="img/2.jpg"></a>
+							<!--<div class="caption">TOUCH·ENABLED</div>-->
+						</li>
+						<li>
+							<a class="ns-img" href="img/3.jpg"></a>
+							<!--<div class="caption">VIDEO·AUDIO</div>-->
+						</li>
+						<li>
+							<a class="ns-img" href="img/4.jpg"></a>
+							<!--<div class="caption">NON·JQUERY</div>-->
+						</li>
+						<li>
+							<a class="ns-img" href="img/5.jpg"></a>
+							<!--<div class="caption">MOBILE·FRIENDLY</div>-->
+						</li>
+					</ul>
+					<div class="navsWrapper">
+						<div id="ninja-slider-prev"></div>
+						<div id="ninja-slider-next"></div>
+					</div>
+				</div>
+			</div>	 
+	<!-- <script type="text/javascript">	
+	if (window.screen.width >= 1024) {
+		//alert(window.screen.width);
+		 document.write('<video width="100%" height="auto" autoplay loop ><source src="http://needyin.com/videos/index_vid.mp4" type="video/mp4"> </video>');
+
+	}
+	else{
+		 document.write('<video width="100%" height="auto" autoplay loop controls><source src="http://needyin.com/videos/index_vid.mp4" type="video/mp4"> </video>');
+	}
+</script>-->
+
+
+    </section>
+		
+
+  	<section id="features" class="probootstrap-section probootstrap-bg-white" style="background: #FFD700;">
+		<div class="container">
+			<div class="row">
+			
+	
+		  <div class="col-md-12" style="text-align:justify;">
+		  <p class="text" style="text-align:justify;font-size:20px !important;font-weight:bold;font-style:italic;color:#0044cc !important;    font-family: cursive;">"We strive to be an enabler for professionals seeking to be closer to home & family due to circumstances which are beyond reasonable control and warrant a paradigm & often a life changing decision. Needyin strives to bring together Professionals and Opportunities which enable them to balance their priorities for handling critical phases in one’s professional & personal lives."<br/></p>
+		  </div>
+		 
+				<div class="features_content text-center">
+					<div class="col-md-3">
+						<div class="sinle_features wow slideInUp" data-wow-duration="1s">
+							<i class="fa fa-user-circle-o fa-5x" style="color:black;" aria-hidden="true"></i>
+							<h5>QA Engineer</h5>
+							
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="sinle_features wow slideInUp" data-wow-duration="1.5s">
+							<i class="fa fa-user-circle-o fa-5x" style="color:black;" aria-hidden="true"></i>
+							<h5>Systems Administrator</h5>
+							
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="sinle_features wow slideInUp" data-wow-duration="2s">
+							<i class="fa fa-user-circle-o fa-5x" style="color:black;" aria-hidden="true"></i>
+							<h5>Java Architect</h5>
+							
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="sinle_features wow slideInUp" data-wow-duration="2s">
+							
+							<i class="fa fa-user-circle-o fa-5x" style="color:black;" aria-hidden="true"></i>
+							<h5>Applications Engineer</h5>							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+    <section class="probootstrap-section probootstrap-bg-white" style="background: 	#4d4747;"  data-stellar-background-ratio="0.5"  id="events">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center  ">
+            <div class="probootstrap-heading">
+              <h2 class="primary-heading">About Us</h2>
+             <!-- <h3 class="secondary-heading">The People Behind NeedyIn</h3>-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="probootstrap-section">
+      <div class="container">
+		<div class="row">
+         <div class="col-md-12 col-sm-12  ">		
+		
+		<p class="text" style="text-align:justify">
+		Yes, this is the “about us” page. But this is really all about YOU. </p>
+		<p class="text" style="text-align:justify">NeedyIn believes in real connections and values personal life. And in a world saturated with modern/digital technology, we know, it’s the human instinct that makes our business difference. </p>
+		<p class="text" style="text-align:justify">Relax! You have reached the correct place!</p>
+		<p class="text" style="text-align:justify">At NeedyIn, we strive to see the charming smile on your face as well as your family members. Yes! We strive to see the bigger picture by showcasing jobs at your NATIVE place. </p>
+		<p class="text" style="text-align:justify">We bring skills to Local. Getting a job that suits your requirements & qualifications would allow you to be more efficient, motivated. But, leaving your home, family, grandparents is the toughest task in your life. Right?</p>
+		<p class="text" style="text-align:justify">Do not worry! This is where NEEDYIN comes into picture!</p>
+		<p class="text" style="text-align:justify">We help you to work at your native place providing a job that suits your requirement. This enables you to be highly progressive in the career and become result-oriented, satisfied. </p>
+		<p class="text" style="text-align:justify">We want to frame HAPPINESS to your FAMILIES!</p>
+		<p class="text" style="text-align:justify">If you are a job seeker in the process of finding your dream job at your locality, we will assist you in connecting to those who value your talents, skills and capabilities. Our services will cater to your need for finding career opportunities.</p>
+
+
+<p class="text" style="text-align:justify">We provide support to recruiters to create and post job descriptions from sourcing, testing to on- boarding successful hires.</p>
+<p class="text" style="text-align:justify">Do not sacrifice your precious time and resources with a long recruitment process, instead seek the services of a well-established recruitment agency like NeedyIn that will get you the candidate, you need at right-time. There's no need to look anywhere else. NeedyIn is the only site you’ll ever need to find your right candidates/jobs!</p>
+<p class="text" style="text-align:justify">If our values resonate with you and you are keen to create with a high-performing company, Contact Us today.</p>
+		  </div>
+        </div>
+      </div>
+    </section>
+			  <section class="probootstrap-section probootstrap-bg-white" style="background: 	#4d4747;"  data-stellar-background-ratio="0.5"  id="events">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center  ">
+            <div class="probootstrap-heading">
+              <h2 class="primary-heading">About Us</h2>
+              <h3 class="secondary-heading">The People Behind NeedyIn</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="probootstrap-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-3  ">
+            <div class="probootstrap-block-image">
+              <figure><img src="img/ramesh.jpg" alt="Free Job Portals and Placement Consultants | Job Posting Sites in India - Needyin"></figure>
+              <div class="text">
+                <span class="date">Ramesh Garikamokkala</span>
+                <h3><a href="#">Founder & CTO</a></h3>
+               <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto provident qui tempore natus quos quibusdam soluta at.</p>
+                <p class=""><a href="#" class="probootstrap-custom-link link-sm">Read More</a></p>-->
+            </div>
+            </div>
+          </div>
+        <div class="col-md-3 col-sm-3  ">
+            <div class="probootstrap-block-image">
+              <figure><img src="img/aditya.jpg" alt="Free Job Portals and Placement Consultants | Job Posting Sites in India - Needyin"></figure>
+              <div class="text">
+                 <span class="date">Aditya Dammuluri</span>
+                <h3><a href="#">Founder & CEO</a></h3>
+              <!--  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto provident qui tempore natus quos quibusdam soluta at.</p>
+                <p class=""><a href="#" class="probootstrap-custom-link link-sm">Read More</a></p>-->
+            </div>
+            </div>
+          </div>
+         <div class="col-md-3 col-sm-3  ">
+            <div class="probootstrap-block-image">
+              <figure><img src="img/shiridi.jpg" alt="Free Job Portals and Placement Consultants | Job Posting Sites in India - Needyin"></figure>
+              <div class="text">
+                 <span class="date">Shirdhi Kumar</span>
+                <h3><a href="#">Product Evangelist</a></h3>
+               <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto provident qui tempore natus quos quibusdam soluta at.</p>
+                <p class=""><a href="#" class="probootstrap-custom-link link-sm">Read More</a></p>-->
+           </div>
+            </div>
+          </div>
+		  <div class="col-md-3 col-sm-3  ">
+            <div class="probootstrap-block-image">
+              <figure><img src="img/kiran.jpg" alt="Free Job Portals and Placement Consultants | Job Posting Sites in India - Needyin"></figure>
+              <div class="text">
+                <span class="date">Alluru Kiran Kumar</span>
+                <h3><a href="#">Assistant Manager</a></h3>
+               <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto provident qui tempore natus quos quibusdam soluta at.</p>
+                <p class=""><a href="#" class="probootstrap-custom-link link-sm">Read More</a></p>-->
+              </div>
+            </div>
+          </div>
+        </div>
+		<div class="row">
+          <div class="col-md-3 col-sm-3  ">
+            <div class="probootstrap-block-image">
+              <figure><img src="img/rao.jpg" alt="Free Job Portals and Placement Consultants | Job Posting Sites in India - Needyin"></figure>
+              <div class="text">
+                <span class="date">DVLN Rao</span>
+                <h3><a href="#">Manager</a></h3>
+               <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto provident qui tempore natus quos quibusdam soluta at.</p>
+                <p class=""><a href="#" class="probootstrap-custom-link link-sm">Read More</a></p>-->
+             </div>
+            </div>
+          </div>
+        <div class="col-md-3 col-sm-3  ">
+            <div class="probootstrap-block-image">
+              <figure><img src="img/shashikala.jpg" alt="Free Job Portals and Placement Consultants | Job Posting Sites in India - Needyin"></figure>
+              <div class="text">
+                 <span class="date">Shashikala Koppu</span>
+                <h3><a href="#">Web App Developer</a></h3>
+              <!--  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto provident qui tempore natus quos quibusdam soluta at.</p>
+                <p class=""><a href="#" class="probootstrap-custom-link link-sm">Read More</a></p>-->
+            </div>
+            </div>
+          </div>
+         <div class="col-md-3 col-sm-3  ">
+            <div class="probootstrap-block-image">
+              <figure><img src="img/swathi.jpg" alt="Free Job Portals and Placement Consultants | Job Posting Sites in India - Needyin"></figure>
+              <div class="text">
+                 <span class="date">Kottakota Swathi</span>
+                <h3><a href="#">Web App Developer</a></h3>
+               <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto provident qui tempore natus quos quibusdam soluta at.</p>
+                <p class=""><a href="#" class="probootstrap-custom-link link-sm">Read More</a></p>-->
+            </div>
+            </div>
+          </div>
+		  <div class="col-md-3 col-sm-3  ">
+            <div class="probootstrap-block-image">
+              <figure><img src="img/priyanka.jpg" alt="Free Job Portals and Placement Consultants | Job Posting Sites in India - Needyin"></figure>
+              <div class="text">
+                <span class="date">Priyanka S Kurup</span>
+                <h3><a href="#">Executive - HR</a></h3>
+               <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto provident qui tempore natus quos quibusdam soluta at.</p>
+                <p class=""><a href="#" class="probootstrap-custom-link link-sm">Read More</a></p>-->
+              </div>
+            </div>
+          </div>
+        </div>
+		<div class="row">
+          <div class="col-md-3 col-sm-3  ">
+            <div class="probootstrap-block-image">
+              <figure><img src="img/bhavna.jpg" alt="Free Job Portals and Placement Consultants | Job Posting Sites in India - Needyin"></figure>
+              <div class="text">
+                <span class="date">Bhavana M</span>
+                <h3><a href="#">Quality Analyst</a></h3>
+               <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto provident qui tempore natus quos quibusdam soluta at.</p>
+                <p class=""><a href="#" class="probootstrap-custom-link link-sm">Read More</a></p>-->
+             </div>
+            </div>
+          </div>
+        <div class="col-md-3 col-sm-3  ">
+            <div class="probootstrap-block-image">
+              <figure><img src="img/noor.jpg" alt="Free Job Portals and Placement Consultants | Job Posting Sites in India - Needyin"></figure>
+              <div class="text">
+                 <span class="date">Noorullah Shaik</span>
+                <h3><a href="#">Software Engineer</a></h3>
+              <!--  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto provident qui tempore natus quos quibusdam soluta at.</p>
+                <p class=""><a href="#" class="probootstrap-custom-link link-sm">Read More</a></p>-->
+           </div>
+            </div>
+          </div>
+         <div class="col-md-3 col-sm-3  ">
+            <div class="probootstrap-block-image">
+              <figure><img src="img/divya.jpg" alt="Free Job Portals and Placement Consultants | Job Posting Sites in India - Needyin"></figure>
+              <div class="text">
+                 <span class="date">Divya Vani</span>
+                <h3><a href="#">Digital Marketing</a></h3>
+               <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto provident qui tempore natus quos quibusdam soluta at.</p>
+                <p class=""><a href="#" class="probootstrap-custom-link link-sm">Read More</a></p>-->
+             </div>
+            </div>
+          </div>
+		  <div class="col-md-3 col-sm-3  ">
+            <div class="probootstrap-block-image">
+              <figure><img src="img/druthi.jpg" alt="Free Job Portals and Placement Consultants | Job Posting Sites in India - Needyin"></figure>
+              <div class="text">
+                <span class="date">Dhruthi Vasista</span>
+                <h3><a href="#">Software Engineer</a></h3>
+               <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto provident qui tempore natus quos quibusdam soluta at.</p>
+                <p class=""><a href="#" class="probootstrap-custom-link link-sm">Read More</a></p>-->
+             </div>
+            </div>
+          </div>
+        </div>
+		<div class="row">
+          <div class="col-md-3 col-sm-3  ">
+            <div class="probootstrap-block-image">
+              <figure><img src="img/sai.jpg" alt="Free Job Portals and Placement Consultants | Job Posting Sites in India - Needyin"></figure>
+              <div class="text">
+                <span class="date">Kondi Sai kumar</span>
+                <h3><a href="#">Software Engineer</a></h3>
+               <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto provident qui tempore natus quos quibusdam soluta at.</p>
+                <p class=""><a href="#" class="probootstrap-custom-link link-sm">Read More</a></p>-->
+             </div>
+            </div>
+          </div>
+        <div class="col-md-3 col-sm-3  ">
+            <div class="probootstrap-block-image">
+              <figure><img src="img/sourabh.jpg" alt="Free Job Portals and Placement Consultants | Job Posting Sites in India - Needyin"></figure>
+              <div class="text">
+                 <span class="date">Sourabh Jain</span>
+                <h3><a href="#">Software Engineer</a></h3>
+              <!--  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto provident qui tempore natus quos quibusdam soluta at.</p>
+                <p class=""><a href="#" class="probootstrap-custom-link link-sm">Read More</a></p>-->
+               </div>
+            </div>
+          </div>
+         <div class="col-md-3 col-sm-3  ">
+            <div class="probootstrap-block-image">
+              <figure><img src="img/prasad.jpg" alt="Free Job Portals and Placement Consultants | Job Posting Sites in India - Needyin"></figure>
+              <div class="text">
+                 <span class="date">Prasad</span>
+                <h3><a href="#">Sr. Manager - HR</a></h3>
+               <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto provident qui tempore natus quos quibusdam soluta at.</p>
+                <p class=""><a href="#" class="probootstrap-custom-link link-sm">Read More</a></p>-->
+             </div>
+            </div>
+          </div>
+		  <div class="col-md-3 col-sm-3  ">
+            <div class="probootstrap-block-image">
+              <figure><img src="img/dax.jpg" alt="Free Job Portals and Placement Consultants | Job Posting Sites in India - Needyin"></figure>
+              <div class="text">
+                <span class="date">Daxon D'souza</span>
+                <h3><a href="#">Client Relationship Manager</a></h3>
+               <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto provident qui tempore natus quos quibusdam soluta at.</p>
+                <p class=""><a href="#" class="probootstrap-custom-link link-sm">Read More</a></p>-->
+             </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+	<section class="probootstrap-section probootstrap-bg-white" style="background: 	#4d4747;" data-stellar-background-ratio="0.5"  id="howitworks">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center  ">
+            <div class="probootstrap-heading">
+              <h2 class="primary-heading">How It Works</h2>
+              <!--<h3 class="secondary-heading">The People Behind creative corner</h3>-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+     <!-- probootstrap-bg-white -->
+    <section class="probootstrap-section">
+      <div class="container">
+
+        <div class="">
+          <p class="text" style="text-align:justify"> Needyin is a platform for all the experienced  job-seekers looking at jobs close to home.<br/>
+		  All you have to do is register with Needyin along with your detials and let them know the preferred location for your job.<br/>
+			</p>
+			<div class="col-md-12 col-sm-12 ">
+			<h3>How do I get started on NeedyIn?</h3>
+			<div class="col-md-6">
+						<div class="sinle_features wow slideInUp" data-wow-duration="1s">
+							<p class="text" style="text-align:justify">Jobseeker:
+							
+							<ul>							
+							<li> Click on jobseeker</li><li> Sign up </li>
+							<li> Fill in the required details</li>
+							<li>Upload the documents and you are ready to apply and seek for the job you desire.</li>
+							</ul>
+							</P>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="sinle_features wow slideInUp" data-wow-duration="1s">
+							
+								<p class="text" style="text-align:justify">
+								Employer:							
+								<ul>							
+								<li> Click on the employer zone</li>
+								<li> Sign up</li>
+								<li>Fill in the required detials.</li>
+								<li>Upload the documents.</li>
+								<li>Click on job post for postings.</li>
+
+							</ul>
+							</P>							
+						</div>
+					</div>
+			</div>
+        </div>
+		<div class="col-md-12 col-sm-12">
+		<div class="row ">
+		<h3>We are Looking For</h3>
+				<div class="features_content text-center">
+					<div class="col-md-3">
+						<div class="sinle_features wow slideInUp" data-wow-duration="1s">
+							<img src="img/user-icon1.png" alt="" />
+							<h5>UI/UX DESIGNERS</h5>
+							
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="sinle_features wow slideInUp" data-wow-duration="1.5s">
+							<img src="img/female_icon.png" alt="" />
+							<h5>PHP LEADS</h5>
+							
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="sinle_features wow slideInUp" data-wow-duration="2s">
+							<img src="img/user-icon1.png" alt="" />
+							<h5>DIGITAL MARKETING AND SALES</h5>
+							
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="sinle_features wow slideInUp" data-wow-duration="2s">
+							<img src="img/female_icon.png" alt="" />
+							<h5>CONTENT WRITER</h5>							
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+      </div>
+    </section>
+
+
+    <section class="probootstrap-section" style="background: #000;"  data-stellar-background-ratio="0.5"  id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5 text-center  ">
+            <div class="probootstrap-heading dark">
+              <h1 class="primary-heading">Contact</h1>
+              <h3 class="secondary-heading">Let's Chat</h3>
+            </div>
+           
+          </div>
+          <div class="col-md-6 col-md-push-1">
+            <form  action="#!" method="post" class="probootstrap-form">
+			 <div class="form-group">
+                <label for="c_name">Full Name *</label>
+                <div class="form-field">
+                  <input id="first_name"  class="form-control" name="first_name" type="text" class="validate" maxlength="55">
+                </div>
+              </div>
+			   <div class="form-group">
+                <label for="c_no">Company Name *</label>
+                <div class="form-field">
+                  <input class="form-control validate" id="comp_name" name="comp_name" type="text" maxlength="10">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="c_no">Contact Number *</label>
+                <div class="form-field">
+                  <input id="tph" class="form-control validate" name="tph" type="text" onkeypress="return isNumber()" maxlength="10">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="c_email">Email *</label>
+                <div class="form-field">
+				  <input id="email" name="email" type="email" maxlength="55" class="form-control validate">
+                 <!-- <textarea name="c_message" id="c_message" cols="30" rows="10" class="form-control"></textarea>-->
+                </div>
+              </div>
+			   <div class="form-group">
+                <label for="c_message">Description *</label>
+                <div class="form-field">				
+                <textarea id="textarea1" name="textarea1" cols="10" rows="3" class="form-control validate"></textarea>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="submit" name="contactsubmit" onclick="return validcntrec()" value="Send Message" class="btn btn-primary btn-lg">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+		<div id="bubble">
+		</div>
+    </section>
+   
+        </main>
+   
+        <?php 
+        if($dnd_status!='2')
+         {
+            include 'footer.php';
+            } ?>
+
+			</body>
+			<!--<script src="js1/scripts.min1.js"></script>-->
+    <script src="js1/custom.min1.js"></script>
+<script type="text/javascript">
+			function isNumber(evt) 
+{
+		evt = (evt) ? evt : window.event;
+		var charCode = (evt.which) ? evt.which : evt.keyCode;
+    if (charCode > 31 && (charCode < 48 || charCode > 57)) 
+	{
+        return false;
+    }
+   else
+   {
+		return true;
+   }
+}
+			function validcntrec()
+			{				
+			var fname=document.getElementById('first_name').value;
+				if(fname=="")
+				{					
+					alert("Please Give Your Full Name");
+						return false;																			
+				}
+				var comp_name=document.getElementById('comp_name').value;
+				if(comp_name=="")
+				{
+					alert("Please Give Your Company Name");
+					
+					return false;															
+				}
+				var email=document.getElementById('email').value;
+				if(email=="")
+				{
+					alert("Please Give Your Email");
+				
+					return false;															
+				}
+				var tph=document.getElementById('tph').value;				
+				if(tph=="")
+				{
+					alert("Please Give Your Contact Number");
+				
+					return false;															
+				}
+				
+				var textarea1=document.getElementById('textarea1').value;
+				if(textarea1=="")
+				{
+					alert("Please Specify Your Requirements");
+				
+					return false;															
+				}
+																					
+			}
+			
+			</script>
+</html>
+<?php
+if(isset($_SESSION['']))
+{
+	$empid=$_SESSION['empSession'];
+	
+}
+else
+	$empid=0;
+if(empty($_POST['first_name'])||empty($_POST['comp_name'])||empty($_POST['email'])||empty($_POST['tph'])||empty($_POST['textarea1']))
+{	
+?> 
+			<?php	
+
+}
+
+else if(isset($_POST['contactsubmit']))
+{
+	
+	$sqlcontact="INSERT INTO tbl_contactrecuriter(emp_id, recuriterFirstName, recuriterLastName,recruiterdesignation, recuriterCompanyName,recuriterLocation, recuriterEmail, recuriterContactNo, recuriterCompUrl, recruiterSpecificRequired) VALUES ('$empid','".$_POST['first_name']."','".$_POST['last_name']."','".$_POST['designation']."','".$_POST['comp_name']."','".$_POST['location']."','".$_POST['email']."','".$_POST['tph']."','".$_POST['url']."','".$_POST['textarea1']."')";
+
+	$sqlcontactres=mysqli_query($con,$sqlcontact);
+	
+	if($sqlcontactres)
+	{
+		 $email_to = "support@needyin.com"; 
+		 
+			$email_subject = $subject;
+		 $message=$_POST['textarea1']." This mail has been received from ".$_POST['email'];
+				$mail = new PHPMailer;
+$email_to="support@needyin.com";
+$mail->IsSMTP();
+
+$mail->Host = 'mail.needyin.com';
+$mail->SMTPAuth = true;
+$mail->Username = 'support@needyin.com';
+$mail->Password = 'Support@123';
+$mail->SMTPSecure = 'tls';
+
+$mail->From ='support@needyin.com';
+$mail->FromName = $_POST['first_name'];
+$mail->addAddress($email_to);
+
+$mail->isHTML(true);
+
+$mail->Subject = $subject;
+$mail->Body    = $message;
+			 if($mail->send())
+				 { ?> <script lang="text/javascript">
+		            alert("Your request mail has been sent");</script>
+			<?php	
+				 }
+				else
+				{ ?> <script lang="text/javascript">
+			alert("Your Request hasn't been sent");
+				</script>
+          
+			<?php
+	
+				}
+	}
+	
+}
+?>

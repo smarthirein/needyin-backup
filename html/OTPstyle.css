@@ -1,0 +1,141 @@
+body {
+	 background: url("login.jpg") no-repeat 0 0;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 30px 0 0 0;
+    min-height: 620px;
+	    font-size: 0.9em;
+    color: #212121;
+    font-family: Arial;
+}
+img.img-responsive {
+    margin: 0 auto;
+}
+.container{
+	width: 350px;
+    margin: 50px auto;
+    box-sizing: border-box;
+}
+
+#frm-mobile-verification {
+    border: #efefef 2px solid;
+    border-radius: 3px;
+    padding: 30px;
+    padding-top:10px;
+    text-align: center;
+}
+
+.form-heading {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.form-row {
+    margin-bottom: 30px;
+}
+
+.form-input {
+    padding: 10px 20px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border: #E0E0E0 1px solid;
+}
+
+.btnSubmit {
+    background: #4c4c4c;
+    padding: 8px 20px;
+    border: #4c4c4c 1px solid;
+    border-radius: 3px;
+    width: 100%;
+    color: #FFF;
+}
+.success {
+    color: #483333;
+    padding: 10px 20px;
+    background: #cff9b5;
+    border: #bce4a3 1px solid;
+    border-radius: 3px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 350px;
+    display:none;
+    box-sizing: border-box;
+}
+
+.btnVerify {
+    background: #4CAF50;
+    padding: 8px 20px;
+    border: #449e48 1px solid;
+    border-radius: 3px;
+    width: 100%;
+    color: #FFF;
+}
+.form-heading p {
+    font-size: 12px;
+	color:#999999;
+}
+.inner-body {
+    background: #fff;
+    border: 5px solid #0088e8;
+    padding: 10px;
+}
+.bg-text {
+  background-color: rgb(0,0,0) !important; /* Fallback color */
+  background-color: rgba(0,0,0, 0.4) !important; /* Black w/opacity/see-through */
+ 
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+  width:100%;
+  height:100%;
+}
+.otphaeder h2 {
+    text-align: center;
+    font-weight: 700;
+    color: #0088e8;
+}
+.newText {
+ font-weight:400 !important;
+ }
+ .dnd {
+font-size: 10px;
+ }
+ .wrongotp{
+    font-size: 50px;
+ }
+ .btn-success {
+    color: #fff;
+    background-color: #4c4c4c !important;
+    border-color: #4c4c4c !important;
+}
+.btn-danger {
+    color: #fff;
+    background-color: #0088e8 !important;
+    border-color: #0088e8 !important;
+}
+.main {
+    background-color: #ffffff;
+    overflow: hidden;
+}
+.main {
+    background-color: #ffffff;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+    width: 50%;
+    display: block;
+    margin: auto;
+    font-size: 16px;
+    font-weight: 700;
+}
+.click:hover {
+    color: #ff0000 !IMPORTANT;
+}

@@ -1,0 +1,65 @@
+/*reset-style*/
+
+.right5px {
+     right: 5px;
+}
+
+.left10 {
+     left: 10%;
+}
+
+.top20 {
+     top: 20%;
+}
+
+.top65 {
+     top: 65%;
+}
+
+.p-0 {
+     padding: 0;
+}
+
+.m-0 {
+     margin: 0;
+}
+
+.h-50 {
+     height: 50%;
+}
+
+.h-60 {
+     height: 60%;
+}
+
+.h-80 {
+     height: 80%;
+}
+
+.h-100 {
+     height: 100%;
+}
+
+.bg-color-dark-blue {
+     background: #013c74;
+}
+
+.bg-transparent-blue {
+     background: rgba(0, 109, 210, 0.5);
+}
+
+.bg-color-blue {
+     background: #006dd2;
+}
+
+.bg-color-black {
+     background: #000000;
+}
+
+.color-blue {
+     color: #006dd2;
+}
+
+.color-white {
+     color: #fff;
+}

@@ -1,0 +1,149 @@
+*{
+margin:0px;
+padding:0px;
+}
+.form-control {
+    background: #fff !important;
+    border: 0px !important;
+    border-bottom: 1px solid #a4a4a4 !important;
+    border-radius: 0px !important;
+	box-shadow: none !important;
+}
+.personaHeader > .navbar-inverse {
+    background-color: #0088e8 !important;
+    border-color: #0088e8!important;
+}
+.personaHeader >.navbar-inverse .navbar-brand {
+    color: #ffffff;
+}
+.personaHeader > .navbar {
+    position: relative;
+    min-height: 50px;
+  margin-bottom:0px !important;
+    border: 1px solid transparent;
+}
+.container-fluid.personaContent {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+.personaContent > .col-md-12{
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+.personaContent > .col-md-12 > .col-md-4{
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+.personaContent > .col-md-12 > .col-md-4 > .personaPersonImage{
+   width: 100% !important;
+   position:relative;
+}
+.form-inline .form-group {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.col-md-12.mainHeader > h4 {
+    color: #0088e8;
+    font-weight: 700;
+}
+.navbar-header > a {
+    color: #fff !important;
+    text-decoration: none;
+}
+.form-group.textArea {
+    margin-top: 10px;
+}
+.input{
+    border: none !important;
+    border-bottom: 1px solid #000 !important;
+    width: 100% !important;
+    height: 34px !important;
+    padding: 6px 12px !important;
+    font-size: 14px !important;
+    line-height: 1.42857143 !important;
+    color: #555 !important;
+    /* background-color: #fff; */
+    /* background-image: none; */
+    border-radius: 0px !important;
+}
+.btn-primary {
+    color: #fff !important;
+    background-color: #0088e8 !important;
+    border-color: #0088e8 !important;
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: #0088e8;
+    border-color: #0088e8;
+}
+.imgContent {
+    position: absolute;
+    bottom: 0px;
+     background: rgba(0, 136, 232, 0.5);
+    /* display: block; */
+    width: 100%;
+}
+.imgContent > ul > li {
+    padding-top: 10px;
+	list-style: none;
+}
+ul.mainContent {
+    width: 38%;
+    /* margin: 0px; */
+    margin: auto;
+	color:#fff;
+}
+.btn-success {
+    color: #fff;
+    background-color: #0088e8 !important;
+    border-color: #0088e8 !important;
+}
+/*----------hexagoncss-------*/
+/*===== The CSS =====*/
+
+.progress{
+	width: 150px !important;
+	height: 150px !important;
+}
+.progress {
+    
+    margin-bottom: 0px !important;
+    overflow: hidden;
+  background-color: #fff !important;
+    border-radius: 4px;
+
+    box-shadow: none !important;
+}
+.progress .track, .progress .fill{
+	fill: rgba(0, 0, 0, 0);
+	stroke-width: 10%;
+	transform: translate(290px, 800px)rotate(-120deg);
+}
+.progress .track{
+	stroke: rgb(56, 71, 83);
+}
+.progress .fill {
+	stroke: rgb(255, 255, 255);
+	stroke-linecap: round;
+	stroke-dasharray: 2160;
+	stroke-dashoffset: 2160;
+	transition: stroke-dashoffset 1s;
+}
+.progress.blue .fill {
+	    stroke: rgb(0, 136, 232);
+}
+.progress.green .fill {
+	    stroke: rgb(0, 136, 232);
+}
+.progress .value, .progress .text {
+	font-family: 'Open Sans';
+	fill: #000;
+	text-anchor: middle;
+}
+.progress .value {
+	font-size: 180px;
+}
+.progress .text {
+	font-size: 120px;
+}
+

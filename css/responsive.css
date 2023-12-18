@@ -1,0 +1,1002 @@
+/** responsive styles for mobile devices **/
+
+@media (min-width:320px) and (max-width:767px) {
+	.search-home-in .sel-city{
+		margin-top:30px;
+	}
+    header .nav {
+        position: relative;
+        z-index: 9999;
+        margin: 0;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    header .navbar-collapse {
+        padding: 0;
+    }
+    header .navbar-default .navbar-nav li a {
+        width: auto;
+        display: block;
+        color: #fff!important;
+        padding: 10px;
+        border-bottom: 1px solid #fff;
+    }
+    header .navbar-default .navbar-nav li:last-child a {
+        border-bottom: none;
+    }
+    header .navbar-default .navbar-nav li {
+        width: 100%;
+        padding:7px 0;
+    }
+    header .navbar-default .navbar-nav {
+        background: #0088e8;
+    }
+    header .navbar-default .navbar-nav li a:hover {
+        color: #fff;
+    }
+    .bannerin {
+        padding-top: 30px;
+        min-height: inherit;
+        padding-bottom:0;
+    }
+   
+    .bannerin article h1 {
+        font-size: 21px;
+        margin-bottom: 10px;
+        padding-bottom: 0;
+    }
+    .page-banner-js .search-home {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    .bannerin article p {
+        font-size: 15px;
+        padding: 20px 0;
+        line-height: 24px;
+    }
+    .top-employers {
+        display: none;
+    }
+    .nopadmob {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .sel-city .input-field {
+        margin-top: 0px;
+    }
+    .newsearch .btn-search .btn {
+        background: none;
+        border: none;
+        color: #fff;
+    }
+    .page-banner-js {
+        min-height: inherit;
+    }
+    .howitworks-home .col-xs-2 img {
+        width: 36px;
+    }
+    footer {
+        background-size: cover;
+    }
+    .footer-in {
+        padding-bottom: 10px;
+        padding-top: 0;
+    }
+    .footer-div h4 {
+        margin: 0;
+    }
+    .footer-div {
+        padding-bottom: 15px;
+    }
+    .top-footer {
+        padding-bottom: 0;
+    }
+    .howwhy {
+        padding-bottom: 20px;
+        margin-bottom: 0;
+    }
+    .news-ltr .btn {
+        background: none;
+        border: none;
+        box-shadow: none;
+    }
+    .signin-in {
+        border: none;
+        min-height: inherit;
+        width:100%;
+       
+    }
+    .signin-in .h3 {
+        font-size: 20px;
+    }
+    .signin-main {
+        height: auto;
+        padding-bottom: 10px;
+    }
+    .forgotpwbtn .btn{
+        height:40px;
+        line-height: 30px;
+    }
+    .mob-input span {
+        display: block;
+        padding: 0 10px 15px 0;
+        float: none!important;
+    }
+    .mob-input {
+        overflow: hidden;
+    }
+    .signin {
+        padding: 10px 0;
+    }
+    .forgotpwbtn {
+        overflow: hidden;
+    }
+    .notif span {
+        right: 10px;
+        top: 10px;
+    }
+    .nav-postlogin-js .dropdown li a {
+        color: #fff;
+    }
+    .notif {
+        margin: 0;
+    }
+    .profile-pic img {
+       
+       
+        margin-bottom:10px;
+    }
+    .header-top-btns li {
+        float: left;
+        width:46%;
+        margin: 3px;
+    }
+    .header-top-btns li a.btn {
+        width: 100%;
+    }
+    .profile-pic-js {
+        position: relative;
+        margin: 25px auto;
+        width:200px;
+        height:240px;
+    }
+    .employer-logo{
+        width:85px;
+        float: right;
+        margin:0;
+    }
+    .js-profile-nav{
+        padding: 0;
+    }
+    .job-title-list figure.prelogo{
+        width:84px;
+        margin:0;
+        float: right;
+    }
+    .header-top-btns {
+        padding-bottom: 15px!important;
+    }
+    .js-basicdetails {
+        color: #333;
+        text-align: center;
+        padding-bottom: 0;
+    }
+    .js-basicdetails .h2 {
+        font-size: 20px;
+    }
+    .js-contact-det {
+        min-height: inherit;
+    }
+    .job-seekar-header {
+        padding-bottom: 0;
+    }
+    .profile-body-content {
+        padding-top: 25px;
+    }
+    #myTab li {
+        float: none;
+        width: 100%;
+        padding: 5px 10px;
+    }
+    .title-block-tab h4 {
+        width: 100%;
+        margin-top:20px;
+    }
+    .title-block-tab a {
+        display: block;
+    }
+    .title-block-tab a,
+    .title-block-tab button {
+        width: 100%;
+        text-align: left;
+    }
+    .block-show {
+        padding-bottom: 10px;
+    }
+    .display-features {
+        padding: 10px;
+    }
+    .usermain-features li {
+        padding-bottom: 10px;
+    }
+    .sal-list-details p span {
+        display: block;
+        float: none!important;
+    }
+    .basic-detailstab li {
+        width: 100%;
+    }
+    .Recruiter-contact-details {
+        overflow-x: auto;
+    }
+    .recview-img {
+        width: 165px!important;
+        margin: 0 auto;
+        position: relative;
+    }
+    .details-js-view{
+        padding-left:none !important;
+		    margin-left: none !important;
+    }
+    .name-view h3 {
+        padding: 10px 0;
+        font-size: 20px;
+    }
+    .name-view h5 {
+        line-height: 20px;
+    }
+    .recview-basic-details .name-view {
+        text-align: center;
+    }
+    .rowcan .col-xs-12 {
+        text-align: center;
+    }
+    .features-main-candidate {
+        padding: 5px 0;
+    }
+    .features-main-candidate p {
+        padding-bottom: 0;
+    }
+    .bcrumb-listjobs li:after {
+        padding: 0 10px;
+    }
+    .details-contact p span {
+        display: block;
+        text-align: center;
+    }
+    .job-list-header {
+        padding: 10px 0;
+    }
+    .change-pw {
+        padding: 10px;
+        width: 100%;
+    }
+    .list-activities li {
+        padding: 10px;
+    }
+    .my-activities {
+        width: 95%;
+    }
+    .list-activities .h5 span {
+        float: left;
+        padding: 5px 0;
+        display: block;
+        width: 100%;
+    }
+    .activities-table {
+        width: 95%;
+    }
+    .list-activities .h5 {
+        padding: 0 10px;
+    }
+    /** recruiter styles **/
+    .login-block {
+        padding: 0;
+    }
+    .top-ban-content {
+        padding: 20px 0;
+        text-align: center;
+    }
+    .top-ban-content h2 {
+        font-size: 20px;
+    }
+    .top-ban-content p {
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .recruiter-main {
+        background: url(../img/mob-rec-indexbg.jpg) no-repeat center top;
+        min-height: 800px;
+        background-size: inherit;
+    }
+    .login-recruiter input[type="text"],
+    .login-recruiter input[type="password"] {
+        padding: 0 10px;
+        width: 95%;
+    }
+    .login-recruiter .form-group {
+        margin: 10px auto;
+    }
+    .login-recruiter .btn-blue-sm {
+        margin: 0;
+    }
+    .notamem,
+    .notamem a {
+        padding: 20px 0;
+    }
+    .recruiter-main .search-home {
+        width: inherit;
+    }
+    .recruiter-main .search-home-in {
+        height: auto;
+    }
+    .recruiter-main .search-home-in input[type="text"] {
+        border: none;
+        padding: 0 0 0 10px;
+    }
+    .recruiter-main .select-wrapper span.caret {
+        right: 28px;
+    }
+    .recruiter-main .select-wrapper {
+        border-bottom: 1px solid #ccc;
+    }
+    .highlets-home .h2 {
+        font-size: 20px;
+    }
+    .highlets-home ul li {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .highlets-home {
+        padding-bottom: 0;
+    }
+    .circle-box:before {
+        display: none;
+    }
+    .circle-box .circle-icon {
+        padding-bottom: 25px;
+    }
+    .ljs-desc {
+        min-height: inherit;
+    }
+    .recruiter-testimonials {
+        margin: 0;
+        padding: 10px 0;
+    }
+    .circle-box {
+        background: #eee;
+        padding: 25px 0;
+    }
+    .tes-title .h2 {
+        font-size: 20px;
+    }
+    .latest-jobseekers {
+        padding: 0 15px 50px 15px;
+    }
+    .top-emp {
+        display: none;
+    }
+    .registration-banner {
+        padding: 20px 0;
+    }
+  
+    .nomrgtop {
+        width: 100%;
+        padding: 10px 15px 10px 0;
+    }
+    form.form-employer-reg {
+        padding: 0;
+    }
+    .input-fieldnew {
+        padding-bottom: 0;
+    }
+    .recruiter-search-top .searchskills {
+       
+        height: auto;
+    }
+    .search-home-in {
+        height: auto;
+    }
+    .job-list-header .search-home-in {
+        background: none;
+    }
+       .job-list-header .btn-search .btn {
+        margin-top: 5px;
+background-color: #ffd200;
+    color: #000;
+    border-left: 2px solid #d2ad00;
+    font-size: 15px;
+    }
+  
+    .js-list-pic {
+        text-align: center;
+       position: relative;
+        margin:15px auto;
+        width:150px;
+        height:170px;
+    }
+    .list-block .h4 {
+        text-align: center;
+    }
+    .db-recruiter-header .navbar-toggle {
+        margin-top: -40px;
+        background: #fff;
+    }
+    .db-recruiter-header .navbar-brand {
+        padding: 0;
+        float: none;
+        height: auto;
+    }
+    .db-recruiter-header .navbar-header {
+        padding-top: 12px;
+    }
+    .db-recruiter-header .navbar-toggle .icon-bar {
+        background: #00a3ff;
+    }
+    .db-recruiter-header .navbar-collapse {
+        background: #333;
+        margin-top: 6px;
+    }
+    .db-recruiter-header .navbar-collapse .nav>li {
+        width: 100%;
+    }
+    .db-recruiter-header .navbar-collapse .nav>li.dropdown {
+        width: 100%;
+    }
+    .db-recruiter-header .navbar-nav>li>a .icon-nav {
+        display: inline-block;
+        padding: 0 20px 0 0;
+    }
+    .db-recruiter-header .dropdown-menu>li>a {
+        color: #fff;
+        padding: 10px 15px!important;
+    }
+    .dbrow-div {
+        margin-bottom: 10px;
+    }
+    .bx {
+        margin-bottom: 10px;
+    }
+    .list-table {
+        overflow-x: auto;
+        width: 100%;
+    }
+    .nav-profiles li {
+        width: 100%;
+    }
+    .brdbg-white {
+        width: 99%;
+        margin-right: 0;
+        margin-left: 5px;
+    }
+    .nav-profiles {
+        padding: 0;
+    }
+    .list-block-db .col-md-12 {
+        overflow-x: auto;
+    }
+    .rowcan {
+        text-align: center;
+        padding: 0;
+    }
+    .options-rec {
+        margin-top: 15px;
+        text-align: center;
+    }
+    .modal {
+        width: 100%;
+        max-height: 90%;
+    }
+    .dataTables_wrapper {
+        overflow-x: auto;
+    }
+    .jobs-header .col-md-4 img {
+        width: 100%;
+    }
+    .jobheader-title .dropdown-buttons {
+        margin-bottom: 15px;
+    }
+    .empdet p {
+        overflow: hidden;
+    }
+    .mt-15{
+        margin-top:0!important;
+    }
+    .desc-tr small{
+        display: none;
+    }
+    .minmax-slider{
+        margin:3px 10px;
+    }
+    .dndcol{
+        width:100%;
+        padding:20px;
+    }
+    .prelogo-detail img{
+        float: right;
+        width:80px;
+    }
+    .prelogo-detail{
+        width:60px;
+    }
+   
+    .usermain-features li:after{
+        content: '';
+    }
+    .comp-name span{
+        border:none;
+        margin-left:0;
+    }
+    .settings-changepw{
+        width:100%;
+    }
+   
+    h2.resp-tab-active small{
+        color:#fff;
+    }
+    .page-titlein h2{
+        margin-top:7px;
+    }
+    .resp-tab-content{
+        padding-top:10px!important;
+    }
+    .testi-page{
+        width:99%;
+        margin:0 auto;
+    }
+    .testi-div figure img{
+        width:inherit;
+        height:inherit;
+    }
+    .cont-titl{
+        margin-top:25px;
+    }
+    .employer-logo img, .prelogo img{
+       width:68px;
+        float:left;
+    }
+    .reg-contact-details{
+        margin-top:40px;
+        margin-bottom:40px;
+    }
+    .mobcenter{
+        text-align: center;
+    }
+    .greenlabel p{
+        display: block;
+    }
+    .newjob-form{
+        padding:25px 10px;
+    }
+    .logo-company{
+        width:auto;
+        text-align: center;
+    }
+    .profile-pic-rec .logo-company{
+        width:250px;
+    }
+    .modal .modal-footer{
+        height:auto;
+    }
+    .page-title-block{
+        padding:10px 0;
+    }
+    h2.resp-accordion{
+        padding:15px!important;
+    }
+    .job-list{
+        min-height:120px;
+    }
+    .right-block-list{
+        margin-bottom:25px;
+    }
+    .js-contact-det span{
+        color:#000;
+        display: inline-block;
+    }
+    header .navbar-brand img{
+        width:180px;
+        margin-left:5px;
+        margin-top:6px;
+    }
+    .list-activities li .activities-div{
+        padding:5px;
+    }
+    .db-recruiter-header .navbar-header{
+        margin-right:0;
+        margin-left:0;
+    }
+	.fixed-search-rt {
+    /* position: fixed; */
+    top: -37%;
+    transition: all 0.3s ease;
+    width: 270px;
+}
+    .options-rec ul{
+       text-align: center;
+    }
+    .options-rec ul li{
+           float: left;
+    display: inline-block;
+    padding-left: 10%;
+        text-align: center;
+    }
+    .options-rec ul li:after{
+        content:'';
+        padding: 0;
+    }
+    .details-contact p span:after{
+        content:'';
+    }
+    .jobimg img{
+        width:100%;
+    }
+    small{
+        float: none;
+    }
+    .viewjob .logo-company{
+        width:160px;
+        text-align: left;
+    }
+    .minmax-sliderd{
+        padding-top:10px;
+    }
+    .recruiter-search-top .search-home-in .sel-city{
+        border-right:1px solid #fff!important;
+    }
+    .recruiter-search-top .bootstrap-select.btn-group .dropdown-toggle .caret{
+        right:10px;
+    }
+    .db-recruiter-header .navbar .dropdown-menu{
+        padding:0 20px;
+    }
+    footer{
+       bottom:0;
+        position: relative;
+    }
+    .footeric{
+        display: none;
+        
+    }
+	.profile-div{
+		margin-bottom:10px;
+		padding:15px;
+	}
+	.padtopbot{
+		padding-bottom:0;
+	}
+	.jobs-stats{
+		background:#eee;
+		margin:5px auto;
+		width:95%;
+		padding:20px 0;
+	}
+	.slide img{
+		width:100%;
+	}
+	.slide{
+		height:auto;
+		background:none;
+	}
+	.slide01{
+		height:56px;
+	}
+	.bootstrap-select.btn-group .dropdown-menu{
+		position:relative;
+		float: none;
+	}
+	.profile-left, .profile-right{
+		min-height:575px;
+	}
+}
+
+
+/** resposive styles for mobile devices **/
+
+
+/** responsive styles for tablet devices **/
+
+@media (min-width:768px) and (max-width:991px) {
+    .bannerin {
+        padding: 35px 0;
+        min-height: auto;
+    }
+    .page-banner-js {
+        min-height: auto;
+    }
+    .page-banner-js .search-home {
+        margin-bottom: 0;
+    }
+    .bannerin article h1 {
+        font-size: 40px;
+        padding-bottom: 10px;
+    }
+    .bannerin article p {
+        padding: 10px;
+    }
+    .top-employers {
+        display: none;
+    }
+    footer {
+        background-size: cover;
+    }
+    .search-filter-title {
+        font-size: 14px;
+    }
+    .subtitle-search-section {
+        font-size: 12px;
+    }
+    .select-wrapper input.select-dropdown {
+        font-size: 14px;
+    }
+    .more-search {
+        font-size: 14px;
+    }
+    .usermain-features li {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .noofjobs {
+        margin-top: 0;
+    }
+    .cont-titl {
+        padding-top: 15px;
+    }
+    .profile-pic-js {
+        width: 190px;
+        height: 210px;
+    }
+  
+    .profile-body-content {
+        padding-top: 20px;
+    }
+    .basic-detailstab li {
+        width: 30%;
+        height:60px;
+        float: left;
+    }
+    .email-news {
+        margin: 0;
+    }
+    .my-activities {
+        width: 98%;
+    }
+    .recruiter-main {
+        background: url(../img/mob-rec-indexbg.jpg) no-repeat center top;
+        min-height: 800px;
+        background-size: 100%;
+    }
+    .login-block {
+        padding: 35px 0;
+    }
+    .top-ban-content {
+        padding-top: 0;
+        padding-bottom: 40px;
+        text-align: center;
+    }
+    .highlets-home ul li {
+        line-height: 22px;
+    }
+    .circle-box {
+        background: #eee;
+        padding: 20px;
+    }
+    .circle-box:before {
+        display: none;
+    }
+    .article-circle {
+        padding-bottom: 25px;
+    }
+    .recruiter-testimonials {
+        padding: 30px 0 20px 0;
+    }
+    .top-emp .row {
+        padding: 0;
+    }
+    .top-emp .row .col-sm-4 figure {
+        padding: 10px;
+    }
+    .bx {
+        margin-bottom: 10px;
+    }
+    .skills-tab {
+        float: left;
+    }
+  
+    .list-block-db {
+        margin: 5px;
+        width: 98%;
+    }
+    .list-block-db table {
+        margin-top: 10px;
+    }
+    .nav-profiles li {
+        text-align: center;
+        width: 33%;
+    }
+    .logo-company img {
+        width: 120px;
+    }
+    .howitworks-home .col-sm-2 img {
+        width: 50px;
+        margin-top: 20px;
+    }
+    .yneedyin .col-sm-2 img {
+        width: 40px;
+        margin-top: 0;
+    }
+    .howwhy {
+        margin-bottom: 0;
+        padding-bottom: 25px;
+    }
+    .signup .select-wrapper {
+        height: 60px;
+    }
+    .job-title-list {
+        padding-bottom: 0;
+    }
+    #quote-carousel .carousel-control.left {
+        left: -40px;
+    }
+    #quote-carousel .carousel-control.right {
+        right: -40px;
+    }
+    .search-ban {
+        width: 100%;
+    }
+    .login-recruiter input[type="text"],
+    .login-recruiter input[type="password"] {
+        padding: 0 10px;
+    }
+    .login-recruiter .btn-blue-sm {
+        margin: 15px 10px;
+        .
+    }
+    .top-emp {
+        display: none;
+    }
+    .news-ltr .btn {
+        width: 100%;
+        box-shadow: none;
+        background: none;
+        border:none;
+    }
+    .highlets-home{
+        padding-bottom:0;
+    }
+    .latest-jobseekers{
+        padding:0 25px 10px 25px;
+    }
+    .recview-img img{
+        margin:0 auto;
+    }
+    .recview-basic-details .name-view{
+        margin-bottom:10px;
+        border-bottom:1px solid #fff;
+        padding-bottom:20px;
+    }
+    .details-contact{
+        padding-bottom:15px;
+    }
+    .options-rec ul li{
+        float: left;
+        padding:10px 25px 10px 0;
+    }
+    .options-rec{
+        padding:0 0 0 25px;
+        overflow: hidden;
+    }
+    .postedjobs{
+        overflow-y:auto;
+    }
+    
+    .news-ltr input[type="email"]{
+        width:100%;
+    }
+    h2.resp-tab-active{
+        color:#fff;
+         padding:15px!important;
+    }
+    h2.resp-accordion{
+        padding:15px!important;
+    }
+    .resp-vtabs .resp-tab-content{
+        padding:20px;
+    }
+    .page-title-block{
+        padding:25px 0;
+    }
+    .page-title-block{
+        margin-bottom:25px;
+    }
+    .teampic figure{
+        height:230px;
+    }
+    .job-list-header{
+        padding:20px 0;
+    }
+    .job-detail-header .usermain-features li{
+        
+        padding-bottom:5px;
+    }
+    .job-detail-header .usermain-features li:after{
+        content:"";
+    }
+    .recview-img{
+        height:230px;
+    }
+    .resp-vtabs {
+        margin-bottom:15px;
+    }
+    .reg-contact-details address{
+        width:50%;
+        float: left;
+    }
+    .reg-contact-details{
+        min-height:auto;
+        overflow: hidden;
+        margin-bottom:30px;
+    }
+    .registration-banner{
+        padding:20px 0;
+    }
+    .mob-lt{
+        float: left!important;
+    }
+    .db-recruiter-header .navbar-nav>li>a{
+        padding:8px;
+    }
+    .db-recruiter-header .navbar-nav>li>a .icon-nav .fa{
+        font-size:20px;
+    }
+    .greenlabel p{
+        display: block;
+    }
+    .greenlabel{
+        margin:10px 0;
+    }
+    .job-detail-header .logo-company{
+        width:auto;
+    }
+    .job-detail-header .logo-company img{
+        width:100%;
+    }
+    .rec-pic{
+        width:100%;
+    }
+    .logo-company{
+        width:100%;
+    }
+    .resp-vtabs .resp-tabs-list li{
+        display: inline;
+    }
+    .addeducation .col-sm-6{
+        height:80px;
+    }
+    footer{
+       bottom:0;
+       position: relative;
+    }
+    .footeric{
+        display: none;
+    }
+    .header-top-btns li a.btn{
+        min-width:inherit;
+    }
+}
+
+
+
+/** responsive styles for tablet devices **/
+
+
+/** responsive styles for 992 to 1024**/
+@media (min-width:992px) and (max-width:1024px) {
+    .profile-pic-js{
+        width:210px;
+    }
+    .recview-img, .recview-img img{
+        width:150px;
+        
+    }
+}
